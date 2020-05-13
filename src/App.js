@@ -9,21 +9,25 @@ function App() {
             id: 0, 
             name: 'GitIcon', 
             hover: false,
+            description: 'https://github.com/rsurasin',
         }, 
         {
             id: 1, 
             name: 'LinkedInIcon', 
             hover: false,
+            description: 'https://linkedin.com/in/rsurasinghe',
         },  
         {
             id: 2, 
             name: 'PDFIcon', 
             hover: false,
+            description: 'Check out my Resume!',
         }, 
         {
             id: 3, 
             name: 'EmailIcon', 
             hover: false,
+            description: 'rahulsurasinghe@gmail.com',
         }, 
     ]); 
 
