@@ -18,3 +18,8 @@ A changelog of all releases.
 * GitHub icon when pressed goes to GitHub. 
 * LinkedIn icon when pressed goes to LinkedIn. 
 * Each icon when hovered over is a different color. 
+
+### Release v0.3
+* Added a Navbar above the title. 
+* Navbar includes Home and About. 
+* **No Routing as of yet.**
