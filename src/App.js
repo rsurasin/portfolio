@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import IconBar from './components/IconBar';
+import NavBar from './components/NavBar'; 
 
 function App() {
     const [icons, setIcon] = useState([
@@ -35,7 +36,7 @@ function App() {
     
     return (
         <div>
-      
+            <NavBar />
             <h1 id='title'>Rahul Surasinghe</h1>
  
             <IconBar icons={icons} toggleHover={toggleHover}/>
