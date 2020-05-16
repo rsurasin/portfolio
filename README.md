@@ -12,3 +12,9 @@ A changelog of all releases.
 * Created static homepage with cool css.
 * Included a main header. 
 * Included an Icon bar. 
+
+### Release v0.2 
+* Included helpful descriptor when hovering over icons. 
+* GitHub icon when pressed goes to GitHub. 
+* LinkedIn icon when pressed goes to LinkedIn. 
+* Each icon when hovered over is a different color. 
