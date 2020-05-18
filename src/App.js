@@ -1,54 +1,18 @@
-//import React, { Component } from 'react';
 import React, { useState } from 'react';
 import './App.scss';
-import IconBar from './components/IconBar';
-import NavBar from './components/NavBar'; 
+import Home from './components/Home';
+import About from './components/About';
+
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
-    const [icons, setIcon] = useState([
-        {
-            id: 0, 
-            name: 'GitIcon', 
-            hover: false,
-            description: 'https://github.com/rsurasin',
-        }, 
-        {
-            id: 1, 
-            name: 'LinkedInIcon', 
-            hover: false,
-            description: 'https://linkedin.com/in/rsurasinghe',
-        },  
-        {
-            id: 2, 
-            name: 'PDFIcon', 
-            hover: false,
-            description: 'Check out my Resume!',
-        }, 
-        {
-            id: 3, 
-            name: 'EmailIcon', 
-            hover: false,
-            description: 'rahulsurasinghe@gmail.com',
-        }, 
-    ]); 
-
-    const toggleHover = (index) => { 
-        const newIcons = [...icons]; 
-        newIcons[index].hover = !newIcons[index].hover; 
-        setIcon(newIcons); 
-    };
-    
     return (
-        <div>
-            <NavBar />
-            <h1 id='title'>Rahul Surasinghe</h1>
- 
-            <IconBar icons={icons} toggleHover={toggleHover}/>
-            <div id='stars'></div>
-            <div id='stars2'></div> 
-            <div id='stars3'></div>
-            
-        </div>
+        <Router>
+            <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/about' component={About} />
+            </Switch>
+        </Router>
     )
 
 }  
