@@ -23,3 +23,8 @@ A changelog of all releases.
 * Added a Navbar above the title. 
 * Navbar includes Home and About. 
 * **No Routing as of yet.**
+
+### Release v0.4 
+* **Added Routing!** 
+* There is now routing to the Home and About pages using React Router.
+* Moved and made Home and About into their own components.
