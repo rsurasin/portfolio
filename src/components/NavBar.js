@@ -5,12 +5,12 @@ import { findByLabelText } from '@testing-library/react';
 function NavBar() {
     return (
         <div id='navbar'>
-            <Link to='/'>
-                <a id='NavItem'>Home</a>
-            </Link> 
-            <Link to='/about'>
-                <a id='NavItem'>About</a>
-            </Link>
+            <li id='liNav'>
+                <Link to='/' style={{textDecoration: 'none'}} id='NavItem'>Home</Link> 
+            </li>
+           <li id='liNav'>
+                <Link to='/about' style={{textDecoration: 'none'}} id='NavItem'>About</Link>
+            </li>
         </div>
     )
 }
